@@ -1,46 +1,61 @@
 # 🔐 ESP32 Access Control System
 
-An educational embedded systems project developed using **ESP32 simulation in Wokwi** and programmed with the Arduino IDE.
+An educational embedded systems project developed using the **ESP32, Wokwi simulator, and Arduino IDE**.
 
-The project simulates an electronic access control system with password verification, LCD messages, LED indicators, temporary lockouts, and permanent lockout logic.
+This project simulates an electronic access control system with password verification, LCD messages, LED indicators, temporary lockouts, and permanent lockout logic.
 
 ## 🚀 Features
 
-- 🔑 Four-button password verification.
-- 📟 LCD display for system status and messages.
-- 🔴 LED indicators for access and lockout status.
-- ⏱️ Five-second temporary lockout after three incorrect passwords.
+- 🔑 Password verification using four buttons.
+- 📟 LCD display for system status and feedback.
+- 🟢 LED indicator for simulated door access.
+- 🔴 LED indicator for incorrect passwords and lockout status.
+- ⏱️ Temporary lockout after three incorrect passwords.
 - 🚨 Permanent lockout after three temporary lockouts.
-- 🔓 Manual reset using a designated authorization button.
-- 🔒 Automatic door-status reset after five seconds.
+- 🔓 Manual reset of the permanent lockout using an authorization button.
+- ⏳ Automatic closing of the simulated door after five seconds.
+- 🔒 Password input feedback using asterisks on the LCD.
 
 ## 🧰 Technologies
 
 - ESP32
-- Wokwi circuit simulator
+- Wokwi Simulator
 - Arduino IDE
 - C/C++
-- LCD interface
-- GPIO digital inputs and outputs
+- Digital electronics
+- GPIO input and output control
 - Embedded systems and control logic
 
-## 🧪 Development and Testing
+## 🧪 Simulation and Testing
 
-The circuit was designed and tested in the Wokwi online simulator because the physical components required for the complete assembly are not currently available.
+The circuit was developed and tested using the **Wokwi online simulator** because the physical components required for the complete assembly are not currently available.
 
-The project focuses on programming logic, digital electronics, input handling, timing, and access-control states.
+The simulation allows the program logic, button inputs, LCD interface, LED indicators, and access-control states to be tested in a virtual environment.
+
+**[▶ Run the ESP32 Access Control Simulation on Wokwi](https://wokwi.com/projects/478782224874054657)**
+
+## ⚙️ How It Works
+
+1. The user enters a four-button password.
+2. If the password is correct, the access indicator turns on for five seconds.
+3. If the password is incorrect, the system counts the failed password entries.
+4. After three incorrect passwords, the system enters a temporary lockout.
+5. After three temporary lockouts, the system enters a permanent lockout.
+6. During the permanent lockout, the red LED flashes until the authorization button is pressed.
 
 ## 🎯 Learning Objectives
 
-- Develop embedded C/C++ programming skills.
+- Practice embedded C/C++ programming.
 - Implement password verification and error counters.
-- Control simulated digital inputs and outputs.
-- Manage temporary and permanent lockout states.
-- Interface a microcontroller with an LCD.
+- Control digital inputs and outputs.
+- Use timers with the `millis()` function.
+- Implement temporary and permanent lockout states.
+- Interface an LCD with a microcontroller.
+- Develop basic access-control logic.
 
 ## ⚠️ Disclaimer
 
-This is an educational simulation. The circuit has not yet been assembled and validated as a complete physical prototype. It is not intended for real-world security applications.
+This project is an educational simulation and has not yet been validated as a complete physical prototype. It is intended for learning and experimentation, not for real-world security applications.
 
 ## 👨‍💻 Author
 
@@ -48,3 +63,7 @@ This is an educational simulation. The circuit has not yet been assembled and va
 
 - GitHub: [@Thawan3d](https://github.com/Thawan3d)
 - LinkedIn: [Thawan Eduardo](https://www.linkedin.com/in/thawan-eduardo-a860523b2/)
+
+---
+
+*Developed as part of my learning journey in Electrical Engineering, Electronics, and Embedded Systems.* ⚡
