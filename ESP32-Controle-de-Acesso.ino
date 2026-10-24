@@ -20,7 +20,7 @@ const int tamanhoSenha = 4;
 
 // Configuracoes
 const int maxErros = 3;
-const int maxBloqueios = 6;
+const int maxBloqueios = 3;
 
 const unsigned long tempoBloqueio = 5000;
 const unsigned long tempoPorta = 5000;
