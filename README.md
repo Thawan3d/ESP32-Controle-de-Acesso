@@ -1,39 +1,46 @@
 # 🔐 ESP32 Access Control System
 
-An educational embedded systems project developed using the ESP32 and Arduino IDE, focused on access control, password verification, LED indicators, and security logic.
+An educational embedded systems project developed using **ESP32 simulation in Wokwi** and programmed with the Arduino IDE.
+
+The project simulates an electronic access control system with password verification, LCD messages, LED indicators, temporary lockouts, and permanent lockout logic.
 
 ## 🚀 Features
 
-- 🔑 Password verification for access control.
-- 🔴 LED indicators for incorrect password attempts and lockout status.
-- 🛡️ Temporary lockout after repeated incorrect attempts.
-- 🚨 Permanent lockout after three temporary lockouts, each triggered by three consecutive incorrect passwords.
-- ⏱️ Five-second lockout interval.
-- 🔓 Manual reset of the permanent lockout using the designated button.
-- 💻 Embedded programming using Arduino IDE and C/C++.
+- 🔑 Four-button password verification.
+- 📟 LCD display for system status and messages.
+- 🔴 LED indicators for access and lockout status.
+- ⏱️ Five-second temporary lockout after three incorrect passwords.
+- 🚨 Permanent lockout after three temporary lockouts.
+- 🔓 Manual reset using a designated authorization button.
+- 🔒 Automatic door-status reset after five seconds.
 
 ## 🧰 Technologies
 
 - ESP32
+- Wokwi circuit simulator
 - Arduino IDE
 - C/C++
-- Digital input and output control
+- LCD interface
+- GPIO digital inputs and outputs
 - Embedded systems and control logic
 
-## 🎯 Project Goals
+## 🧪 Development and Testing
 
-This project aims to develop practical skills in microcontroller programming, digital electronics, input/output control, and basic access control systems.
+The circuit was designed and tested in the Wokwi online simulator because the physical components required for the complete assembly are not currently available.
 
-## 📚 Learning Outcomes
+The project focuses on programming logic, digital electronics, input handling, timing, and access-control states.
 
-- Implementing conditional logic and counters.
-- Controlling LEDs through GPIO pins.
-- Managing lockout states and reset conditions.
-- Developing embedded systems with the ESP32.
+## 🎯 Learning Objectives
+
+- Develop embedded C/C++ programming skills.
+- Implement password verification and error counters.
+- Control simulated digital inputs and outputs.
+- Manage temporary and permanent lockout states.
+- Interface a microcontroller with an LCD.
 
 ## ⚠️ Disclaimer
 
-This is an educational prototype intended for learning and experimentation. It has not been validated as a secure access control system for real-world applications.
+This is an educational simulation. The circuit has not yet been assembled and validated as a complete physical prototype. It is not intended for real-world security applications.
 
 ## 👨‍💻 Author
 
