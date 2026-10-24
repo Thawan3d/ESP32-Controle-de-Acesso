@@ -7,7 +7,7 @@ An educational embedded systems project developed using the ESP32 and Arduino ID
 - 🔑 Password verification for access control.
 - 🔴 LED indicators for incorrect password attempts and lockout status.
 - 🛡️ Temporary lockout after repeated incorrect attempts.
-- 🚨 Permanent lockout after six failed attempts.
+- 🚨 Permanent lockout after three temporary lockouts, each triggered by three consecutive incorrect passwords.
 - ⏱️ Five-second lockout interval.
 - 🔓 Manual reset of the permanent lockout using the designated button.
 - 💻 Embedded programming using Arduino IDE and C/C++.
